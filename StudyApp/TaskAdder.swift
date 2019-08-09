@@ -12,6 +12,7 @@ struct Task : Identifiable{
     var id = UUID()
     let name: String
     let color: Color
+    
 }
 
 struct TaskAdder : View {
@@ -45,7 +46,9 @@ struct TaskAdder : View {
                 
                 List(taskList) { task in
                     HStack {
-                        Text(task.name).foregroundColor(task.color)
+Text(task.name).foregroundColor(task.color)
+                        TotalTimeSelector()
+                        
                     }
                 }
                 NavigationLink.init("Next", destination: TimeDivider())

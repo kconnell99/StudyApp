@@ -18,7 +18,6 @@ struct ContentView : View {
                     .font(.title)
                     .fontWeight(.bold)
                 .foregroundColor(Color.black)
-                TotalTimeSelector()
                 NavigationLink.init("Next", destination: TaskAdder())
                     
         }
